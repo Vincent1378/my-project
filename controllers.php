@@ -3,19 +3,7 @@
 /**
  * Contrôleur de la page d'accueil
  */
-function genHome()
-{
-    // @TODO Aller chercher les 5 derniers articles les plus récents
 
-    $ArticleModel = new ArticleModel();
-    $articles = $ArticleModel->getAllArticles(5);
-
-    $flashMessage = getFlashMessage();
-
-    // Affichage : inclusion du fichier de template
-    $template = 'home';
-    include TEMPLATE_DIR .'/base.phtml';
-}
 
 function genArticle()
 {   
