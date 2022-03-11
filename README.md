@@ -1,5 +1,7 @@
 # my-project
 
+TEST
+
 LOCAL LOCAL LOCAL
 
 
