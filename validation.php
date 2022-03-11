@@ -32,19 +32,4 @@ function validateSignupForm(string $lastname, string $firstname, string $email, 
         $errors['email'] = "Vous êtes déjà enregistré";
     }
 
-    // PASSWORD
-    if (!$password) { 
-        $errors['password'] = 'Le champ "Mot de passe" est obligatoire';
-    }
-
-    elseif (strlen($password) < 8) {
-        $errors['password'] = 'Le champ "Mot de passe" doit comporter au moins 8 caractères';
-    }
-
-    elseif($password != $passwordConfirm) {
-        $errors['password-confirm'] = 'Les mots de passe ne sont pas identiques';
-    }
-    
-    // Retourne le tableau d'erreurs
-    return $errors;
 }
